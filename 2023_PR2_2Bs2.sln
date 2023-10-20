@@ -7,9 +7,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "01-OOP-010-Role", "01-OOP-0
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "01-OOP-020-Tachometr", "01-OOP-020-Tachometr\01-OOP-020-Tachometr.csproj", "{F912EDB1-4650-425B-85FC-1FCD4EE2473B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01-OOP-040-Test-vyrobku", "01-OOP-040-Test-vyrobku\01-OOP-040-Test-vyrobku.csproj", "{2C93686F-D59C-45F0-8FBB-BB9D27091288}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "01-OOP-040-Test-vyrobku", "01-OOP-040-Test-vyrobku\01-OOP-040-Test-vyrobku.csproj", "{2C93686F-D59C-45F0-8FBB-BB9D27091288}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01-OOP-050-Lanovka", "01-OOP-050-Lanovka\01-OOP-050-Lanovka.csproj", "{8BEA0906-F15E-4D05-9490-2CA384CD5750}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "01-OOP-050-Lanovka", "01-OOP-050-Lanovka\01-OOP-050-Lanovka.csproj", "{8BEA0906-F15E-4D05-9490-2CA384CD5750}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01-OOP-051-Lanovka-index", "01-OOP-051-Lanovka-index\01-OOP-051-Lanovka-index.csproj", "{96D8973D-2D55-4C4D-97DC-BAC7C1A2C05E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01-OOP-052-Lanovka-linked", "01-OOP-052-Lanovka-linked\01-OOP-052-Lanovka-linked.csproj", "{CF11E060-C6F6-451D-8693-7EAE0D48263F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +37,14 @@ Global
 		{8BEA0906-F15E-4D05-9490-2CA384CD5750}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8BEA0906-F15E-4D05-9490-2CA384CD5750}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8BEA0906-F15E-4D05-9490-2CA384CD5750}.Release|Any CPU.Build.0 = Release|Any CPU
+		{96D8973D-2D55-4C4D-97DC-BAC7C1A2C05E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{96D8973D-2D55-4C4D-97DC-BAC7C1A2C05E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{96D8973D-2D55-4C4D-97DC-BAC7C1A2C05E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{96D8973D-2D55-4C4D-97DC-BAC7C1A2C05E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CF11E060-C6F6-451D-8693-7EAE0D48263F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF11E060-C6F6-451D-8693-7EAE0D48263F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF11E060-C6F6-451D-8693-7EAE0D48263F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF11E060-C6F6-451D-8693-7EAE0D48263F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
