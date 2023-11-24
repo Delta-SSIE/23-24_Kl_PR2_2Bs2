@@ -58,7 +58,6 @@
     {
         public Kun(string jmeno) : base(jmeno)
         {
-            Jmeno = Jmeno + " (Kůň)";
             Console.WriteLine($"Narodil se nový kůň, jmenuje se {Jmeno}.");
         }
 
