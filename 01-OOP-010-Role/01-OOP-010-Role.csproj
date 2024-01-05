@@ -8,4 +8,11 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\01-OOP-040-Test-vyrobku\01-OOP-040-Test-vyrobku.csproj" />
+    <ProjectReference Include="..\01-OOP-050-Lanovka\01-OOP-050-Lanovka.csproj" />
+    <ProjectReference Include="..\01-OOP-051-Lanovka-index\01-OOP-051-Lanovka-index.csproj" />
+    <ProjectReference Include="..\01-OOP-052-Lanovka-linked\01-OOP-052-Lanovka-linked.csproj" />
+  </ItemGroup>
+
 </Project>
