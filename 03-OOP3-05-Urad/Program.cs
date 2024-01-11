@@ -6,6 +6,12 @@
         {
 
             int pocetPrepazek = 4;
+            int minPozadavek = 2;
+            int maxPozadavek = 20;
+            double pstZaMinutu = 0.15;
+            int zaviracka = 120;
+
+            Random random = new Random(123456);
 
             Clovek[] lide =
             {
@@ -32,8 +38,15 @@
             int cas = 0;
 
             // dokud jsou lidi ve frontě
-            while(fronta.Count > 0) 
+            while(cas <= zaviracka) 
             {
+                //zjistím, jestli nepřišel někdo nový
+                if (random.NextDouble() < pstZaMinutu)
+                {
+                    Clovek novy = Clovek.RndClovek(minPozadavek, maxPozadavek, random);
+                    fronta.Enqueue(novy);
+                }
+
 
                 // projdu přepážky
                 foreach (Prepazka prepazka in prepazky) 
