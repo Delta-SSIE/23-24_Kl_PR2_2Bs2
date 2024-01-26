@@ -124,7 +124,27 @@ namespace _03_OOP3_06_Hanojska_vez
             Console.SetCursorPosition(x, y);
             Console.Write(new string('=', 2 * Size - 1));
         }
+        public void MoveDiscs(int from, int to, int count)
+        {
+            int tmpPin = 3 - from - to;
+            int above = count - 1;
 
-        
+            //1 presun vše nad na zbývající (dočasný) kolík
+            if (above > 0)
+                MoveDiscs(from, tmpPin, above);
+
+            //2 přesuň spodní disk do cíle
+            Move(from, to);
+
+            Console.Clear();
+            Render();
+            System.Threading.Thread.Sleep(250);
+
+            //3 přesun z dočasného do cíle
+            if (above > 0)
+                MoveDiscs(tmpPin, to, above);
+            
+        }
+
     }
 }
