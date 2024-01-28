@@ -112,8 +112,19 @@ namespace _03_OOP3_07_Salesmen_tree
 
         public static int GetSubnetSales(Salesman person)
         {
-            throw new NotImplementedException();
-            //zde dodělaáte dvě implementace - fronta, zásobník, rekurze ... vyberte si
+            Stack<Salesman> subnet = new Stack<Salesman>();
+            subnet.Push(person);
+            int sales = 0;
+
+            while (subnet.Count > 0)
+            {
+                Salesman currentPerson = subnet.Pop();
+                sales += currentPerson.Sales;
+
+                foreach (Salesman nextPerson in currentPerson.Subordinates)
+                    subnet.Push(nextPerson);
+            }
+            return sales;
         }
 
         static void DisplaySalesmenTree(Salesman node, string indent = "")
