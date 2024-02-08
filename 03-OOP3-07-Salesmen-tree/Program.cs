@@ -127,6 +127,21 @@ namespace _03_OOP3_07_Salesmen_tree
             return sales;
         }
 
+        static int GetSubnetSalesRecursive(Salesman salesman)
+        {
+            //vezmi moje prodeje
+            int totalSales = salesman.Sales;
+
+            //přičti všechny prodeje všech podřízených
+            foreach (Salesman sub in salesman.Subordinates)
+            {
+                totalSales += GetSubnetSalesRecursive(sub);
+            }
+
+            //součet vrať
+            return totalSales;
+        }
+
         static void DisplaySalesmenTree(Salesman node, string indent = "")
         {
             Console.WriteLine($"{indent}{node.Name} {node.Surname} - Sales: {node.Sales}");
