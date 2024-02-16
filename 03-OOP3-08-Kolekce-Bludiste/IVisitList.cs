@@ -6,5 +6,10 @@ using System.Threading.Tasks;
 
 namespace _03_Kolekce_02_Bludiste
 {
-    public enum TileType { Wall, Corridor, Entrance, Exit, Listed, Visited }
+    internal interface IVisitList
+    {
+        int Count { get; }
+        void Add(Coords place);
+        Coords GetNext();
+    }
 }

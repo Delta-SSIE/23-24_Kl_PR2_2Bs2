@@ -57,5 +57,77 @@ namespace _03_Kolekce_02_Bludiste
             _display.WrapUp();
         }
 
+        public void Solve(IVisitList visitList)
+        {
+            //připrav si seznam míst k navštívení
+            
+
+            //začni na startu
+            visitList.Add(_entrance);
+
+            //dokud na seznamu něco je
+            while (visitList.Count > 0) 
+            {
+                //vezmi prvního na seznamu
+                Coords here = visitList.GetNext();
+
+                //označ jako navštíveného - ale ne start a cíl
+                if (_map[here.X, here.Y] == TileType.Listed)
+                    _map[here.X, here.Y] = TileType.Visited;
+
+                //když je to cíl, hurá skonči
+                if (_map[here.X, here.Y] == TileType.Exit)
+                {
+                    return;
+                }
+
+                //jinak přidej na seznam všechny sousedy
+                foreach(Coords neighbour in Neighbours(here))
+                {
+                    visitList.Add(neighbour);
+                }
+
+                RenderMaze();
+                Console.ReadKey();
+            }
+        }
+
+        private Coords[] Neighbours(Coords place)
+        {
+            //4 možní sousedé
+            Coords[] candidates =
+            {
+                new Coords(place.X + 1, place.Y),
+                new Coords(place.X - 1, place.Y),
+                new Coords(place.X, place.Y + 1),
+                new Coords(place.X, place.Y - 1),
+            };
+
+            //sem přijdou ti, kteří projdou testem
+            List<Coords> result = new();
+
+            //otestuju
+            foreach(Coords c in candidates)
+            {
+                if 
+                (
+                    c.X >= 0 && c.X < Width
+                    && c.Y >= 0 && c.Y < Height
+                )
+                {
+                    TileType tileAtC = _map[c.X, c.Y];
+                    if (tileAtC == TileType.Corridor || tileAtC == TileType.Exit)
+                    { 
+                        result.Add(c);
+
+                        if (tileAtC == TileType.Corridor)
+                            _map[c.X, c.Y] = TileType.Listed;
+                    }
+                }
+            }
+
+            return result.ToArray();
+        }
+
     }
 }
