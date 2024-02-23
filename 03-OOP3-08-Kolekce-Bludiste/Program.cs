@@ -10,7 +10,8 @@
 
             //IVisitList list = new StackVisitList();
             //IVisitList list = new QueueVisitList();
-            IVisitList list = new RandomVisitList();
+
+            IVisitList list = new NearVisitList2(maze.Exit);
 
             maze.Solve(list);
         }

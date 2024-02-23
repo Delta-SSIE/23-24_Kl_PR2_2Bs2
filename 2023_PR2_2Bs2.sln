@@ -67,6 +67,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "03-OOP3-07-Salesmen-tree", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "03-OOP3-08-Kolekce-Bludiste", "C:\Users\koupja\source\repos\2023_PR2_2Bs2\03-OOP3-08-Kolekce-Bludiste\03-OOP3-08-Kolekce-Bludiste.csproj", "{697BC93E-50E7-431C-9D42-3AF43314679B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03-OOP3-09-LIst-a-linked-list", "03-OOP3-09-LIst-a-linked-list\03-OOP3-09-LIst-a-linked-list.csproj", "{6EA9ABBB-CCD0-4171-9F5E-4F2B374824EE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -189,6 +191,10 @@ Global
 		{697BC93E-50E7-431C-9D42-3AF43314679B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{697BC93E-50E7-431C-9D42-3AF43314679B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{697BC93E-50E7-431C-9D42-3AF43314679B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6EA9ABBB-CCD0-4171-9F5E-4F2B374824EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6EA9ABBB-CCD0-4171-9F5E-4F2B374824EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6EA9ABBB-CCD0-4171-9F5E-4F2B374824EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6EA9ABBB-CCD0-4171-9F5E-4F2B374824EE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -223,6 +229,7 @@ Global
 		{EA9016EE-C46B-40B6-BE55-05A63CB12521} = {0354F46C-B6AB-4A70-8838-F7B236B018D2}
 		{AA2B1AA8-5379-4780-896A-8814BE6B269B} = {0354F46C-B6AB-4A70-8838-F7B236B018D2}
 		{697BC93E-50E7-431C-9D42-3AF43314679B} = {0354F46C-B6AB-4A70-8838-F7B236B018D2}
+		{6EA9ABBB-CCD0-4171-9F5E-4F2B374824EE} = {0354F46C-B6AB-4A70-8838-F7B236B018D2}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {9BC48628-1BBF-4325-9C1A-78E994A22CE5}

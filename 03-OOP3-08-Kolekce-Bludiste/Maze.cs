@@ -11,6 +11,7 @@ namespace _03_Kolekce_02_Bludiste
         public int Width { get; private set; }
         public int Height { get; private set; }
         private Coords _entrance;
+        public Coords Exit { get; private set; }
         private TileType[,] _map;
         private MazeDisplay _display;
 
@@ -38,6 +39,8 @@ namespace _03_Kolekce_02_Bludiste
                         };
                         if (line[x] == 'S') //poznamenám si, kde je start
                             _entrance = new Coords(x, y);
+                        else if (line[x] == 'E') //poznamenám cíl
+                            Exit = new Coords(x, y);
                     }
                 }                
             }
@@ -101,6 +104,10 @@ namespace _03_Kolekce_02_Bludiste
                 new Coords(place.X - 1, place.Y),
                 new Coords(place.X, place.Y + 1),
                 new Coords(place.X, place.Y - 1),
+                //new Coords(place.X + 1, place.Y + 1),
+                //new Coords(place.X + 1, place.Y - 1),
+                //new Coords(place.X - 1, place.Y + 1),
+                //new Coords(place.X - 1, place.Y - 1)
             };
 
             //sem přijdou ti, kteří projdou testem
