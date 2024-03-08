@@ -10,10 +10,10 @@ namespace _04_Unit_testing_01_Minimum
     {
         public static int FindMin(int[] numbers)
         {
-            //if (numbers.Length == 0)
-            //    throw new EmptyArrayException("Empty dataset");
+            if (numbers.Length == 0)
+                throw new EmptyArrayException("Empty dataset");
 
-                int min = int.MaxValue;
+            int min = int.MaxValue;
             foreach (int num in numbers)
             {
                 if (min > num)
