@@ -16,12 +16,39 @@ namespace _06_WPF_08_Calculator
     /// </summary>
     public partial class MainWindow : Window
     {
+        enum Operation { Add, Subtract, Multiply, Divide }
+
+        private double _lastNumber;
+        private string _currentInput;
+        private Operation _lastOperation;
+
         public MainWindow()
         {
             InitializeComponent();
-            Button b = new Button();
-            b.Foreground = Brushes.White;
-            
+            _currentInput = "0";
+        }
+
+        private void RenderDisplay()
+        {
+            DisplayTB.Text = _currentInput;
+        }
+
+        private void NumberBtn_Click(object sender, RoutedEventArgs e)
+        {
+            Button pressedBtn = (Button)sender;
+            string digit = pressedBtn.Content.ToString();
+
+            if (_currentInput == "0")
+                _currentInput = "";
+
+            _currentInput += digit;
+            RenderDisplay();
+        }
+
+        private void ACButton_Click(object sender, RoutedEventArgs e)
+        {
+            _currentInput = "0";
+            RenderDisplay();
         }
     }
 }
