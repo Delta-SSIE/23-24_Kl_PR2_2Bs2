@@ -20,7 +20,7 @@
                 />-->
 
         <Grid.RowDefinitions>
-            <RowDefinition />
+            <RowDefinition/>
             <RowDefinition Height="40"/>
         </Grid.RowDefinitions>
 
