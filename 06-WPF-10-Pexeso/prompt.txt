@@ -1,0 +1,11 @@
+﻿Help me as an experienced desktop developer.
+
+I wanna build a contacts management app with permanent storage in a file. The technology will be WPF on Windows.
+
+The app will have a main window split into two parts - a list of all contacts and panel for contact details. The contact list is active - clicking one line shows contact details in side panel.
+
+The UI also enables to add, modify and delete contacts. Adding and modification of contacts should happen in a dedicated form-like window.
+
+Deleting a contact should require verification.
+
+
